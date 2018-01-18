@@ -1,8 +1,9 @@
 package main
 
 import (
-	"asciidog"
 	"fmt"
+
+	"github.com/aguai/asciidog"
 )
 
 func main() {

@@ -5,14 +5,14 @@ f = sub(r"\/{4}[^\/{4}]+\/{4}|\/\/\ .+\n", '',
 
 
 def Blockenize(S):
-    sexRegx = r"(?s)\={3}\s"
+    sectRe = r"(?s)\={3}\s"
     done = []
     temp = []
     while isinstance(S[0], list):
         done.append(S.pop(0))
-    if match(sexRegx, S[0]):
+    if match(sectRe, S[0]):
         temp.append(S.pop(0))
-    while match(sexRegx, S[0]) is None:
+    while match(sectRe, S[0]) is None:
         if len(S) == 1:
             temp.append(S[0])
             S.pop(0)

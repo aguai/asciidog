@@ -1,0 +1,220 @@
+:author: aguai
+:date: 2018-01-17
+:title: 文章標題
+
+
+= 文章標題
+.照道理說這是副標題
+
+=== 段落
+.是這樣的
+Paragraphs don't require any special markup in AsciiDoc.
+A paragraph is just one or more lines of consecutive text.
+
+To begin a new paragraph, separate it by at least one blank line.
+Newlines within a paragraph are not displayed.
+
+段落不需要 Markup。
+一個新的段落前後至少要有一個空行。
+
+行尾加上加號 +
+可以在行內做斷行
+////
+
+這些是註釋
+
+////
+A normal paragraph.
+
+ A paragraph offset by at least one space becomes a literal paragraph.
+ All lines in a literal paragraph must be adjacent.
+
+A literal paragraph is displayed as preformatted text.
+
+ The text is shown in a fixed-width font.
+ Spaces and newlines,
+ like the ones in this sentence,
+ are preserved.
+
+Another normal paragraph.
+
+NOTE: An admonition paragraph draws the reader's attention to
+auxiliary information.
+Its purpose is determined by the label
+at the beginning of the paragraph.
+
+Here are the other built-in admonition types:
+
+=== Admonitions
+TIP: Pro tip...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+// 這也是註釋
+
+CAUTION: Ensure that...
+
+
+=== source
+[source, c++, hello.cc]
+#include <iostream>
+using namespace std;
+int main(){
+  cout<<"fuckyou\n";
+  return(0);
+}
+
+=== Quote
+[quote, 阿怪, 流行音樂從入門到放棄]
+____
+這一切都是命啊。
+____
+
+=== Text Mark
+*bold phrase* & **char**acter**s**
+_italic phrase_ & __char__acter__s__
+*_bold italic phrase_* & **__char__**acter**__s__** +
+`monospace phrase` & ``char``acter``s`` +
+`*monospace bold phrase*` & ``**char**``acter``**s**`` +
+`_monospace italic phrase_` & ``__char__``acter``__s__`` +
+`*_monospace bold italic phrase_*` & +
+``**__char__**``acter``**__s__**`` +
+Werewolves are allergic to #cassia cinnamon#. +
+^super^script phrase +
+~sub~script phrase +
+"`double curved quotes`" +
+'`single curved quotes`' +
+Olaf's desk was a mess. +
+All of the werewolves`' desks were a mess. +
+Olaf had been with the company since the `'60s. +
+
+=== lists
+. Apples
+. Oranges
+
+//-
+
+. Walnuts
+. Almonds
+
+.Possible DefOps manual locations
+* West wood maze
+** Maze heart
+*** Reflection pool
+** Secret exit
+* Untracked file in git repository
+
+* level 1
+** level 2
+*** level 3
+**** level 4
+***** level 5
+* level 1
+
+. Protons
+. Electrons
+. Neutrons
+
+
+.Parts of an atom
+. Protons
+. Electrons
+. Neutrons
+
+. Step 1
+. Step 2
+.. Step 2a
+.. Step 2b
+. Step 3
+
+=== Labeled lists
+CPU::
+The brain of the computer.
+Hard drive::
+Permanent storage for operating system and/or user files.
+
+RAM:: Temporarily stores information the CPU uses during operation.
+
+Keyboard:: Used to enter text or control items on the screen.
+
+Mouse:: Used to point to and select items on your computer screen.
+
+Monitor:: Displays information in visual form using text and graphics.
+
+
+|===
+|Shortcut |Purpose
+
+|kbd:[F11]
+|Toggle fullscreen
+
+|kbd:[Ctrl+T]
+|Open a new tab
+
+|kbd:[Ctrl+Shift+N]
+|New incognito window
+
+|kbd:[Ctrl + +]
+|Increase zoom
+|===
+
+'''
+
+[cols="2,2,5a"]
+|===
+|Firefox
+|Browser
+|Mozilla Firefox is an open-source web browser.
+
+It's designed for:
+
+* standards compliance
+* performance
+* portability
+
+http://getfirefox.com[Get Firefox]!
+|===
+
+'''
+
+,===
+Artist,Track,Genre
+
+Baauer,Harlem Shake,Hip Hop
+,===
+
+'''
+
+:===
+Artist:Track:Genre
+
+Robyn:Indestructable:Dance
+:===
+
+'''
+
+=== menu and button
+To save the file, select menu:File[Save].
+
+Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
+
+Press the btn:[OK] button when you are finished.
+
+Select a file in the file navigator and click btn:[Open].
+
+kbd:[Ctrl+T]
+
+=== Textual symbol replacements
+(C) +
+(R) +
+this -- should be a long dash +
+this ... should be a one char +
+-> +
+<- +
+=> +
+<= +
+
+_The Pragmatic Programmer_ <<prag>> should be required reading for
+all developers.

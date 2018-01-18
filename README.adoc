@@ -1,0 +1,5 @@
+== asciidog 
+
+a limited implementation of asciidoc in python3/go +
+(havn't decide yet...) 
+for html5 generate only

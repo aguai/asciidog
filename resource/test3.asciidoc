@@ -1,0 +1,25 @@
+Asciidoctor Demo
+================
+////
+Big ol' comment
+We'll be right with you...
+
+after this brief interruption.
+sittin' right 'tween this here title 'n header metadata
+////
+
+//:backend: docbook45
+//:backend: html5
+//:doctype: book
+//:sectids!:
+:plus: &#43;
+
+
+
+////
+We'll be right with you...
+
+after this brief interruption.
+////
+////
+
